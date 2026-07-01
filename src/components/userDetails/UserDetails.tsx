@@ -31,7 +31,7 @@ const UserDetails = () => {
         ))}
       </div>
 
-      <div className="bg-white/40 mt-5.5 p-4 flex-1 min-h-0 overflow-y-auto hide-scrollbar">
+      <div className="bg-glass/40 mt-5.5 p-4 flex-1 min-h-0 overflow-y-auto hide-scrollbar">
         <UserDetailsOverview />
         <UserDataAndStatus />
         <ParentHierarchy />

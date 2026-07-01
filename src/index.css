@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('./fonts/RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 @theme {
   --color-primary: #214055;
   --color-primary-blue: #0E5484;
@@ -13,6 +24,8 @@
   --color-blob3: #E8712F;
   --color-blob4: #8FD6B0;
   --color-glass: #FFFFFF;
+  --color-active-text: #007200;
+  --color-active-bg: #00FF001F;
 }
 
 html.dark {
@@ -24,6 +37,8 @@ html.dark {
   --color-secondary: #9ED4FF;
   --color-main-background: #031636;
   --color-glass: #1A3F5E;
+  --color-active-text: #4ADE80;
+  --color-active-bg: #14532D66;
   --color-blob1: #0a3153;
   --color-blob2: #032a59;
   --color-blob3: #0a2042;

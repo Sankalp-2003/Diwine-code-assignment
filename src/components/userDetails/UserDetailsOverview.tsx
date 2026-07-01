@@ -37,7 +37,7 @@ const OVERVIEW_ACTIONS = [
 const UserDetailsOverview = () => {
   return (
     <div className="relative rounded-2xl flex flex-col items-center bg-background-secondary/20 py-2">
-      <div className="absolute top-4 right-4 text-[#007200] bg-[#00FF001F] rounded-md py-1 px-2 text-xs font-semibold">
+      <div className="absolute top-4 right-4 text-active-text bg-active-bg rounded-md py-1 px-2 text-xs font-semibold">
         Active
       </div>
 
