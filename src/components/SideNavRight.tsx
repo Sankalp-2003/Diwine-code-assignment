@@ -34,17 +34,16 @@ const BasicButton = ({ children }: { children: React.ReactNode }) => {
 };
 
 const SideNavRight = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(
+    () => localStorage.getItem(THEME_STORAGE_KEY) === "dark"
+  );
 
   useEffect(() => {
-    const prefersDark = localStorage.getItem(THEME_STORAGE_KEY) === "dark";
-    document.documentElement.classList.toggle("dark", prefersDark);
-    setIsDarkMode(prefersDark);
-  }, []);
+    document.documentElement.classList.toggle("dark", isDarkMode);
+  }, [isDarkMode]);
 
   const toggleTheme = () => {
     const nextIsDarkMode = !isDarkMode;
-    document.documentElement.classList.toggle("dark", nextIsDarkMode);
     localStorage.setItem(THEME_STORAGE_KEY, nextIsDarkMode ? "dark" : "light");
     setIsDarkMode(nextIsDarkMode);
   };
