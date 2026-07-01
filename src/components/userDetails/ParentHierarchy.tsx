@@ -38,7 +38,7 @@ const ParentHierarchy = () => {
     <div className="mt-5.5">
       <TitleContainer icon={<VscTypeHierarchy />} title="Parent Hierarchy" />
 
-      <div className="mt-5.5 bg-background-secondary2/10 rounded-lg p-2.5 grid grid-cols-2 gap-2">
+      <div className="mt-5.5 bg-background-secondary2/10 rounded-lg p-2.5 grid grid-cols-2 gap-2 max-md:grid-cols-1">
         {PARENT_HIERARCHY_DATA.map((item) => (
           <div
             className="bg-background-secondary/20 rounded-lg p-4 flex items-center justify-between"

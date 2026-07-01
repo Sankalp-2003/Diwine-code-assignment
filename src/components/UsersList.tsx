@@ -33,7 +33,7 @@ const UsersList = () => {
         <BiSortAZ className="text-primary" height={16} width={16} />
       </div>
 
-      <div className="mt-2 space-y-1 max-h-full overflow-y-auto hide-scrollbar">
+      <div className="mt-2 space-y-1 max-h-90 md:max-h-full overflow-y-auto hide-scrollbar">
         {USER_LIST_DATA.map((item) => (
           <button className="flex items-center justify-between w-full hover:bg-primary-blue/20 rounded-xl p-3">
             <div className="flex items-center gap-2.5">
@@ -44,7 +44,7 @@ const UsersList = () => {
               </div>
             </div>
 
-            <div className="text-base text-[#007200]">
+            <div className="text-base text-active-text">
               <MdLockOutline />
             </div>
           </button>

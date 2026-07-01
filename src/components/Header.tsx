@@ -21,10 +21,10 @@ const BADGE_DATA = [
 ];
 const Header = () => {
   return (
-    <div className="flex px-2 py-2 items-center justify-between">
-      <div className="flex gap-4">
+    <div className="flex px-2 py-2 items-center justify-between max-md:flex-col max-md:items-start max-md:gap-2">
+      <div className="flex gap-4 max-md:w-full">
         <h3 className="text-primary text-base font-semibold">Create User</h3>
-        <div className="rounded-full border border-glass text-secondary p-2 flex items-center gap-2 min-w-60 bg-glass/40">
+        <div className="rounded-full border border-glass text-secondary p-2 flex items-center gap-2 min-w-60 bg-glass/40 max-md:min-w-0 max-md:flex-1">
           <IoIosSearch height={8} width={8} />
           <input
             className="bg-transparent text-xs w-full border-none outline-none"
@@ -33,7 +33,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex gap-2.5">
+      <div className="flex gap-2.5 max-md:w-full max-md:overflow-x-auto max-md:pb-1">
         {BADGE_DATA.map((item) => (
           <div
             key={item.name}

@@ -18,8 +18,8 @@ const ACTION_BAR_DATA = [
 
 const UserDetails = () => {
   return (
-    <div className="flex-1 h-full flex flex-col min-h-0">
-      <div className="flex items-center justify-end gap-4 shrink-0">
+    <div className="flex-1 h-full flex flex-col min-h-0 max-md:flex-none max-md:h-auto">
+      <div className="flex items-center justify-end gap-4 shrink-0 max-md:flex-wrap max-md:justify-start max-md:gap-2">
         {ACTION_BAR_DATA.map((item) => (
           <button
             key={item.id}
@@ -31,7 +31,7 @@ const UserDetails = () => {
         ))}
       </div>
 
-      <div className="bg-glass/40 mt-5.5 p-4 flex-1 min-h-0 overflow-y-auto hide-scrollbar">
+      <div className="bg-glass/40 mt-5.5 p-4 flex-1 min-h-0 overflow-y-auto hide-scrollbar max-md:flex-none max-md:overflow-y-visible">
         <UserDetailsOverview />
         <UserDataAndStatus />
         <ParentHierarchy />

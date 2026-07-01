@@ -43,7 +43,7 @@ const UserDetailsOverview = () => {
 
       <Avatar name="Casino" size="lg" />
       <p className="mt-1.5 text-base text-primary font-medium">Casino</p>
-      <div className="mt-2.5 inline-flex bg-primary-blue/5 px-2 py-1 rounded-sm gap-2">
+      <div className="mt-2.5 inline-flex bg-primary-blue/5 px-2 py-1 rounded-sm gap-2 max-md:flex-col max-md:gap-1 max-md:w-full">
         {OVERVIEW_DETAILS.map((item, index) => (
           <div className="text-primary-blue text-sm" key={item.name}>
             {index + 1}. {item.name} ={" "}
@@ -52,7 +52,7 @@ const UserDetailsOverview = () => {
         ))}
       </div>
 
-      <div className="mt-3 flex items-center gap-3">
+      <div className="mt-3 flex items-center gap-3 max-md:flex-wrap max-md:gap-2 max-md:justify-center">
         {OVERVIEW_ACTIONS.map((item) => (
           <button className="text-base text-primary p-0.5 border border-primary/30 rounded-sm">
             {item.icon}

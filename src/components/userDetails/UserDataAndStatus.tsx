@@ -52,7 +52,7 @@ const STATUS_DATA = [
 const UserDataAndStatus = () => {
   return (
     <div className="mt-5">
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1 max-md:gap-3">
         {CLIENT_DETAILS_DATA.map((item) => (
           <div className="flex gap-5" key={item.id}>
             <div className="h-7.5 w-7.5 bg-background-secondary/80 rounded-full flex items-center justify-center text-base">
@@ -74,7 +74,7 @@ const UserDataAndStatus = () => {
             className="bg-background-secondary/20 rounded-lg p-4 flex items-center gap-2.5"
             key={item.name}
           >
-            <div className="text-[#007200] text-base">
+            <div className="text-active-text text-base">
               <MdLockOutline />
             </div>
             <div className="space-y-1">

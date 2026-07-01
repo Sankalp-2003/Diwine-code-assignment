@@ -49,7 +49,7 @@ const SideNavRight = () => {
   };
 
   return (
-    <aside className="p-4 py-2 pl-0 h-full flex flex-col items-center">
+    <aside className="p-4 py-2 pl-0 h-full flex flex-col items-center max-md:hidden">
       <BasicButton>
         <IoMdRefresh />
       </BasicButton>

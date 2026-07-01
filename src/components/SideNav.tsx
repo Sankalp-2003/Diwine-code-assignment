@@ -42,7 +42,7 @@ const NAV_DATA = [
 
 const SideNav = () => {
   return (
-    <aside className="relative h-full w-14 shrink-0">
+    <aside className="relative h-full w-14 shrink-0 max-md:hidden">
       <div className="group absolute inset-y-0 left-0 w-14 hover:w-56 overflow-hidden transition-[width] duration-300 ease-in-out flex flex-col px-2 py-3.5 z-20 bg-main-background/80 backdrop-blur-sm">
         <div className="text-primary shrink-0 px-1 mb-3">
           <IoPersonSharp height={16} width={16} />
